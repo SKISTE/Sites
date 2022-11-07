@@ -1,0 +1,98 @@
+@media (min-width:320px) {
+    #first{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .maintext{
+        font-size: 6em;
+        width: 100vw;
+        text-align: center;
+        font-weight: 900;
+        animation: showtext 1.3s ease-in-out forwards;
+    }
+    .subtext{
+        animation: showtext 1s ease-in-out forwards;
+        animation-delay: .3s;
+        opacity: 0;
+        margin-top: 1%;
+        font-size: 4em;
+        text-align: center;
+    }
+    .avatar{
+        animation: showtext 1s ease-in-out forwards;
+        animation-delay: .7s;
+        opacity: 0;
+        height: 20%;
+        width: 100%;
+        height: 20%;
+        width: 100%;
+    }
+    .devices{
+        width: 90vw;
+        height: 15vh;
+        position: absolute;
+        bottom: 0;
+        animation: showsecondtextarea 1s ease-in-out forwards;
+        animation-delay: .6s;
+        opacity: 0;
+    }
+    .delay{
+        width:100%;
+        height: 20%;
+    }
+    #second{
+        width:100%;
+        height: 100vh;
+        background-color: #7510f7;
+    }
+    #second{
+        width:100vw;
+        height: 100vh;
+    }
+    .secondtextarea{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10vh;
+        flex-direction: column;
+    }
+    .secondmaintext{
+        opacity: 0;
+        color: white;
+        font-size: 6em;
+        text-align: center;
+        font-weight: 700;
+    }
+    .secondsubtext{
+        opacity: 0;
+        color:white;
+        animation-delay: 1s;
+        text-align: center;
+        font-size: 3.5em;
+        padding-top: 3%;
+        font-weight: lighter;
+        width: 90%;
+    }
+    @keyframes showsecondtextarea {
+        from{
+            transform: translateY(200px);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    @keyframes showtext {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+}

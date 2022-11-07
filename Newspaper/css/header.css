@@ -1,0 +1,39 @@
+#header{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    min-height: 5vh;
+}
+#header > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primarytextcolor);
+}
+#header > #urls > ul{
+    position: relative;
+}
+#header > #urls > ul > li{
+    display: inline;
+    font-size: 1em;
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+}
+#header > #urls > ul > li:hover > a{
+    color: black;
+    transition: .4s;
+}
+#header > #urls > ul > li:not(:hover) > a{
+    color: var(--primarytextcolor);
+    transition: .4s;
+}
+#header > #urls > ul > li:not(:last-child){
+    margin-right: 50px;
+}
+#header > #urls > ul > li > a.visited, #header > #urls > ul > li > a{
+    color: var(--primarytextcolor);
+    text-decoration: none;
+}
