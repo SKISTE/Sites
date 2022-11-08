@@ -9,12 +9,9 @@
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
     box-shadow: 0 0 20px rgba(0, 0, 0,.3);
+    margin-bottom: 5vh;
 }
-.mainnews{
-    /* background-color: aqua; */
-    padding: 2vh;
-
-}
+.mainnews{padding: 2vh;}
 .mainnews > h1{
     margin: 0;
     padding: 0;
@@ -28,6 +25,14 @@
     max-height: 50vh;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
+.WithRightImg{
+    grid-template-columns: 3fr 1.5fr !important;
+}
+.WithRightImg .text{
+    text-align: right;
+    padding-right: 2vw;
+    margin-left: 0 !important;
+}
 .mainnews > .blockWithNews > .img{
     position: relative;
 }
@@ -38,7 +43,8 @@
     object-fit: cover;
 }
 .mainnews > .blockWithNews > .img > img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
+    outline: 3px black dashed;
     transition: .4s;
 }
 .mainnews > .blockWithNews > .text{
@@ -46,7 +52,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .1fr 1fr .1fr;
-
 }
 .mainnews > .blockWithNews > .text > .title{
     font-size: 1.4em;
@@ -58,10 +63,7 @@
 .mainnews > .blockWithNews > .text > .url > a.visited,.mainnews > .blockWithNews > .text > .url > a{
     color: var(--darkprimary);
 }
-
-
 .exturls{
-    /* background-color: blueviolet; */
     box-shadow: -5px 0 5px rgba(0, 0, 0,.1);
     text-align: right;
     padding: 2vh;
@@ -70,6 +72,40 @@
 .exturls > ul{
     list-style-type: none;
 }
+.exturls > ul > li > span{
+    user-select: none;
+    cursor: pointer;
+    color: var(--primarytextcolor);
+}
+.exturls > ul > li:hover > span{
+    color: black;
+    transition: .4s;
+}
+.exturls > ul > li:hover:after{
+    color: black;
+    transition: .4s;
+}
+.exturls > ul > li:not(:hover):after{transition: .4s;}
+
+.exturls > ul > li:not(:hover) > span{transition: .4s;}
 .exturls > ul > li:after{
     content: ' •';
+    color: var(--primarytextcolor);
+}
+#footer{
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#footer_urls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer_urls > a{color: var(--primarytextcolor) !important;}
+#footer_urls > a > i:not(:hover){transition: .4s;}
+#footer_urls > a > i:hover{
+    color: black;
+    transition: .4s;
+    transform: scale(1.2) translateY(-26%);
 }

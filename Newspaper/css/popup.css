@@ -1,0 +1,54 @@
+.popup{
+    display: grid;
+    grid-template-rows: .3fr 3fr;
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    z-index: 9999;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    animation: showpopup .5s ease-in-out forwards;
+}
+.popup_remove{
+    animation: removepopup .5s ease-in-out forwards !important;
+}
+@keyframes showpopup {
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+@keyframes removepopup {
+    0%{transform: scale(1);}
+    100%{transform: scale(0);}
+}
+.popup > .popup_header{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.popup > .popup_header > .popup_title,.popup > .popup_header > .popup_closebtn{
+    display: flex;
+    /* justify-content: center; */
+    padding: 1%;
+    font-size: 2em;
+    font-weight: 900;
+    align-items: center;
+}
+.popup > .popup_header > .popup_closebtn{
+    justify-content: right;
+    font-size: 1.5em;
+    transform: scale(.9);
+}
+.popup > .popup_header > .popup_closebtn > i:hover{
+    transform: rotate(360deg);
+    transition: .5s;
+}
+.popup > .popup_header > .popup_closebtn > i:not(:hover){transition: .5s;}
+.popup > .popup_iframe{
+    padding: 1%;
+}
+.popup > .popup_iframe > iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
