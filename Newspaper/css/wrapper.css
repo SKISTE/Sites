@@ -63,7 +63,8 @@
     color: var(--darkprimary);
 }
 .exturls{
-    box-shadow: -5px 0 5px rgba(0, 0, 0,.1);
+    box-shadow: -5px 0 5px rgba(0, 0, 0,.1), 0 5px 5px rgba(0, 0, 0,.1);
+    border-bottom-left-radius: 50px;
     text-align: right;
     padding: 2vh;
     font-size: 1.2em;
