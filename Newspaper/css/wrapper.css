@@ -44,7 +44,6 @@
 }
 .mainnews > .blockWithNews > .img > img:hover{
     transform: scale(1.1);
-    outline: 3px black dashed;
     transition: .4s;
 }
 .mainnews > .blockWithNews > .text{
@@ -67,7 +66,7 @@
     box-shadow: -5px 0 5px rgba(0, 0, 0,.1);
     text-align: right;
     padding: 2vh;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 .exturls > ul{
     list-style-type: none;
@@ -95,8 +94,21 @@
 .article{
     padding: 2%;
 }
-.article span{
+.article > span, .article > p{
     font-size: 1.1em;
+}
+.article > figure{
+    text-align: center;
+}
+.article > figure > figcaption{
+    color: var(--primarytextcolor);
+}
+.article > figure:hover > figcaption{
+    color: black;
+    transition: .4s;
+}
+.article > figure:not(:hover) > figcaption{
+    transition: .4s;
 }
 #footer{
     padding: 2%;

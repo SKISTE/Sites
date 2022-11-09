@@ -4,6 +4,7 @@
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr;
     min-height: 5vh;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
 }
 #header > div{
     display: flex;
@@ -22,6 +23,9 @@
     cursor: pointer;
     transition: .4s;
     transform: scale(1.1);
+}
+#header > #urls > ul > li.current > a{
+    color: black !important;
 }
 #header > #urls > ul > li{
     display: inline;

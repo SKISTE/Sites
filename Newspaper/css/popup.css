@@ -1,7 +1,7 @@
 .popup{
     display: grid;
     grid-template-rows: .3fr 3fr;
-    position: absolute;
+    position: fixed;
     width: 90vw;
     height: 90vh;
     background-color: white;
