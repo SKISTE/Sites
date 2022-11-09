@@ -92,6 +92,12 @@
     content: ' •';
     color: var(--primarytextcolor);
 }
+.article{
+    padding: 2%;
+}
+.article span{
+    font-size: 1.1em;
+}
 #footer{
     padding: 2%;
     display: grid;
