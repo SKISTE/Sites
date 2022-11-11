@@ -24,8 +24,14 @@
     transition: .4s;
     transform: scale(1.1);
 }
+#header > #logo{
+    background: url(../media/logo.svg);
+    background-size: 100% 100%;
+    width: 100%;
+}
 #header > #urls > ul > li.current > a{
-    color: black !important;
+    color: var(--lightprimary) !important;
+    /* text-shadow: 0 0px 2px var(--lightprimary); */
 }
 #header > #urls > ul > li{
     display: inline;
@@ -36,7 +42,7 @@
     transition: .4s;
 }
 #header > #urls > ul > li:hover > a{
-    color: black;
+    color: var(--lightprimary);
     transition: .4s;
 }
 #header > #urls > ul > li:not(:hover) > a{

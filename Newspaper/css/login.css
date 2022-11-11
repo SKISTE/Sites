@@ -49,6 +49,7 @@
 }
 #loginform > .loginform > form > .login_header > span > i:hover{
     transform: rotate(45deg);
+    color: var(--lightprimary);
     transition: .4s;
 }
 #loginform > .loginform > form > .login_header > span > i:not(:hover){
@@ -61,7 +62,7 @@
     border-bottom: 1px solid var(--primarytextcolor);
 }
 #loginform > .loginform > form > input[type='email']:focus,#loginform > .loginform > form > input[type='password']:focus{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--lightprimary);
     transition: .4s;
 }
 #loginform > .loginform > form > input[type='email']:not(:focus),#loginform > .loginform > form > input[type='password']:not(:focus){
@@ -79,7 +80,8 @@
 }
 #loginform > .loginform > form > input[type='submit']:hover{
     width: 70%;
-    background-color: var(--primarytextcolor);
+    background-color: var(--lightprimary);
+    color: white;
     transition: .6s;
 }
 #loginform > .loginform > form > input[type='submit']:not(:hover){

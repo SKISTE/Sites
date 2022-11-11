@@ -10,13 +10,13 @@ function show_popup(name, iframe){
     console.log(name,iframe)
     let popup = document.createElement('div')
     popup.classList.add('popup')
-    popup.innerHTML = `<div class="popup_header">
+    popup.innerHTML = `<div class="popup_content"><div class="popup_header">
         <div class="popup_title">${name}</div>
         <div class="popup_closebtn" onclick='remove_popups()'><i class="fa fa-times-circle-o fa-2x" aria-hidden="true"></i></div>
     </div>
     <div class="popup_iframe">
         <iframe src="extendedhtmls/${iframe}"></iframe>
-    </div>`
+    </div></div>`
     document.body.prepend(popup)
     return true
 }
