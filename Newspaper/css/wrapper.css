@@ -89,7 +89,7 @@
     color: var(--primarytextcolor);
 }
 .exturls > ul > li:hover > span{
-    color: black;
+    color: var(--lightprimary);
     transition: .4s;
 }
 .exturls > ul > li:hover:after{
